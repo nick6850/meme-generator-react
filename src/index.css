@@ -23,3 +23,38 @@ header > h2 {
   margin-left: 15px;
   font-size: 45px;
 }
+
+#meme-generator{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+
+.inputs {
+  display: flex;
+  gap: 30px;
+  margin: 50px 0 30px;
+  justify-content: center;
+}
+
+.inputs > input {
+  width: 50%;
+  font-size: 25px;
+}
+
+#get-meme-btn {
+  background-color: green;
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+}
+
+.inputs > input, #get-meme-btn {
+  border-radius: 5px;
+  padding: 15px 15px;
+  border: 1px solid rgba(128, 128, 128, 0.428);
+}
