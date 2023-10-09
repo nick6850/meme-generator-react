@@ -58,3 +58,8 @@ header > h2 {
   padding: 15px 15px;
   border: 1px solid rgba(128, 128, 128, 0.428);
 }
+
+.meme-img {
+  max-width: 550px;
+  margin: 30px auto;
+}
