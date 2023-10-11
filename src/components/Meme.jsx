@@ -20,16 +20,27 @@ export default function Meme(){
         }})
     }
 
+    function changeText(e){
+        let {name, value} = e.target
+        setMeme(prev => ({
+            ...prev,
+            [name]: value,
+        }))
+    }
 
     return(
         <main>
             <div action="" id='meme-generator'>
                 <div className="inputs">
-                    <input type="text" name="" id="" placeholder="Shut up"/>
-                    <input type="text" name="" id="" placeholder="and take my money"/>
+                    <input type="text" onChange={changeText} name="topText" value={newMeme.topText} placeholder="Shut up"/>
+                    <input type="text" name="bottomText" value={newMeme.bottomText} onChange={changeText} placeholder="and take my money"/>
                 </div>
                 <button type='button' onClick={getMeme}  id='get-meme-btn'>Get a new meme image 🎨</button>
-                <img className='meme-img' src={newMeme.randomImage} alt="" />
+                <div className="meme">
+                    <img className='meme-img' src={newMeme.randomImage} alt="" />
+                    <div className="meme-text top">{newMeme.topText}</div>
+                    <div className="meme-text bottom">{newMeme.bottomText}</div>
+                </div>
             </div>
         </main>
     )

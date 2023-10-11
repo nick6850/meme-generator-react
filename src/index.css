@@ -59,7 +59,43 @@ header > h2 {
   border: 1px solid rgba(128, 128, 128, 0.428);
 }
 
-.meme-img {
-  max-width: 550px;
+.meme {
+  position: relative;
   margin: 30px auto;
+  text-align: center;
 }
+
+.meme-img {
+  width: 100%;
+}
+
+
+.meme-text {
+  position: absolute; 
+  left: 0;
+  right: 0; 
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0px 2px 0 #000,
+  2px 0px 0 #000,
+  0px -2px 0 #000,
+  -2px 0px 0 #000,
+  2px 2px 5px #000;
+}
+
+.bottom {
+   bottom: 0;
+ }
+
+.top {
+   top: 0;
+ }
